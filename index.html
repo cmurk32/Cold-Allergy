@@ -36,18 +36,19 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script>
-        var allergy_count = 0;
-        var cold_count = 0;
+        var pop_count = 0;
+        var country_count = 0;
 
 
-        function allergyAdd(){
-            allergy_count = allergy_count + 1;
-		alert(allergy_count);
+        function popAdd(){
+            pop_count = pop_count + 1;
+		alert(pop_count is " + pop_count + "\ncountry_count is " + country_count);
 
         }
 
-        function coldAdd(){
-            cold_count = cold_count + 1;
+        function countryAdd(){
+            country_count = country_count + 1;
+            alert(pop_count is " + pop_count + "\ncountry_count is " + country_count);
         }
 
   </script>
@@ -150,7 +151,77 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     </div>
 </div>
 
+<div class="page" id="six">
+     <div class="w3-container w3-flat-carrot">
+        <h1>Question 6</h1>
+    </div>
+
+    <div id="content" class="w3-container">
+        <p>Do you prefer trucks or cars?</p>
+        <a href="#seven" onclick="popAdd()" class="w3-btn w3-grey w3-round"> Cars </a>
+        <a href="#seven" onclick="countryAdd()" class="w3-btn w3-grey w3-round"> Truck </a>
+    </div>
 </div>
+
+<div class="page" id="seven">
+     <div class="w3-container w3-flat-carrot">
+        <h1>Question 7</h1>
+    </div>
+
+    <div id="content" class="w3-container">
+        <p>Do you prefer dogs or cats?</p>
+        <a href="#eight" onclick="popAdd()" class="w3-btn w3-grey w3-round"> Cats </a>
+        <a href="#eight" onclick="countryAdd()" class="w3-btn w3-grey w3-round"> Dogs </a>
+    </div>
+</div>
+
+<div class="page" id="eight">
+     <div class="w3-container w3-flat-carrot">
+        <h1>Question 8</h1>
+    </div>
+
+    <div id="content" class="w3-container">
+        <p>Are you a morning person or a night owl?</p>
+        <a href="#nine" onclick="popAdd()" class="w3-btn w3-grey w3-round"> Night owl </a>
+        <a href="#nine" onclick="countryAdd()" class="w3-btn w3-grey w3-round"> Morning person </a>
+    </div>
+</div>
+
+<div class="page" id="nine">
+     <div class="w3-container w3-flat-carrot">
+        <h1>Question 9</h1>
+    </div>
+
+    <div id="content" class="w3-container">
+        <p>Do you prefer golf carts or ATV's?</p>
+        <a href="#ten" onclick="popAdd()" class="w3-btn w3-grey w3-round"> Golf carts </a>
+        <a href="#ten" onclick="countryAdd()" class="w3-btn w3-grey w3-round"> ATV's </a>
+    </div>
+</div>
+
+<div class="page" id="ten">
+     <div class="w3-container w3-flat-carrot">
+        <h1>Question 10</h1>
+    </div>
+
+    <div id="content" class="w3-container">
+        <p> Do you prefer baseball caps or cowboy hats?</p>
+        <a href="#eleven" onclick="popAdd()" class="w3-btn w3-grey w3-round"> Baseball caps </a>
+        <a href="#eleven" onclick="countryAdd()" class="w3-btn w3-grey w3-round"> Cowboy Hat </a>
+    </div>
+</div>
+
+<div class="page" id="eleven">
+    <div class="w3-container w3-flat-carrot">
+        <h1>Results</h1>
+    </div>  
+    
+    <div id="content" class="w3-container">
+         <p>Press on the button below to see your results!</p>
+         <a class="w3-btn w3-grey w3-round"> Click here for results! </a>
+     </div>
+ </div>
+
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>This Is Not A Medical Diagnosis!</p>
 </footer>
