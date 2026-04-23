@@ -51,6 +51,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             alert("country_count is " + country_count + "\npop_count is " + pop_count);
         }
 
+        function changeText(){
+            var initialText = document.getElementById("results");
+            initialText.innerHTML = "probability it is allergies = " + allergy_count + "% <br> Probability it is a cold = " + cold_count + "%"
+        }    
+
   </script>
 
 
